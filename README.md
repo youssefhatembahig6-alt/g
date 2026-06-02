@@ -14,22 +14,22 @@ A minimal browser extension that shows token count, cache timer, and usage bars 
 
 **Chrome / Edge / Chromium**
 
-1. Download 
-2. Go to `chrome://extensions` and enable **Developer mode**
-3. Drag and drop the zip onto the page
+1. [Download ZIP](https://github.com/youssefhatembahig6-alt/Claude-Usage/archive/refs/heads/main.zip)
+2. Extract file
+3. Go to `chrome://extensions` and enable **Developer mode**
+4. Drag and drop the zip onto the page
 
 **Firefox**
 
-1. Download 
-2. Drag it into any Firefox window and click **Add**
-
-
+1. [Download ZIP](https://github.com/youssefhatembahig6-alt/Claude-Usage/archive/refs/heads/main.zip)
+2. Extract file
+3. Drag it into any Firefox window and click **Add**
 
 ## How it works
 
 - Intercepts Claude's API responses to read conversation data and usage info
 - Uses a vendored tokenizer (`o200k_base`) for approximate token counting
-- Uses Claude’s `/usage` plus live SSE `message_limit` data; the SSE provides exact, unrounded utilization fractions, so the progress bars are more accurate than the rounded percentages shown on Claude’s native /usage page
+- Uses Claude's `/usage` plus live SSE `message_limit` data; the SSE provides exact, unrounded utilization fractions, so the progress bars are more accurate than the rounded percentages shown on Claude's native /usage page
 - Watches for DOM changes to inject UI elements as you navigate
 
 ## Privacy
@@ -41,7 +41,6 @@ A minimal browser extension that shows token count, cache timer, and usage bars 
 ## Credits
 
 - Token counting via [gpt-tokenizer](https://github.com/niieani/gpt-tokenizer) (MIT)
-  
 
 ## License
 
